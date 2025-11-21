@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <a href="/">Principal</a> | 
+    <a href="/suma">Suma</a> | 
+    <a href="#">Opción 3</a> 
+    <br>
+    <!-- Contenedor (Aca va a ir lo que esa definido por ejemplo entre
+     sections de la view suma) -->
+     @yield('content')
+
+    Hola soy el template y estoy en layout/app
+</body>
+</html>
