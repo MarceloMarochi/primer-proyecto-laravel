@@ -12,7 +12,7 @@
         <!-- @csrf Instrucción para que laravel identidfique si le da permisos de 
         solicitud. Es un complemento que brinda un valor encriptado para
         que laravel recepcione la información del formulario  -->
-        @csrf
+        @csrf 
         <label for="num1">Numero 1:</label>
         <input type="number" name="num1" id="num1" required>
         <br>
@@ -25,6 +25,8 @@
         
     </form>
 
-    <p>Resultado de la suma: </p>
+    @if(isset($resultadoParametro))
+        <p>Resultado de la suma: {{ $resultadoParametro }}</p>
+    @endif
 </body>
 </html>
