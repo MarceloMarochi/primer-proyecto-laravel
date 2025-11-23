@@ -9,12 +9,14 @@
 <body>
     <a href="/">Principal</a> | 
     <a href="/suma">Suma</a> | 
-    <a href="#">Opción 3</a> 
-    <br>
+    <a href="/productos">Productos</a> 
+    <br><br>
+    
     <!-- Contenedor (Aca va a ir lo que esa definido por ejemplo entre
      sections de la view suma) -->
      @yield('content')
 
+    <br>
     Hola soy el template y estoy en layout/app
 </body>
 </html>

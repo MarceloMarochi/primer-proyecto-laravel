@@ -2,6 +2,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SumaController;
+use App\Http\Controllers\ProductoController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -29,3 +30,5 @@ Route::post('/suma', [SumaController::class, 'suma']);
     // Acá estoy definiendo el nombre del resultadoParametro
     return view('suma', ['resultadoParametro' => $resultado]);
 }); */
+
+Route::get('/productos', [ProductoController::class, 'index']);
